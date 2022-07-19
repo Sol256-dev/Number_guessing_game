@@ -34,6 +34,10 @@ while True:
 
     else:
         print("wrong guess!")
+        if user_guess < random_number:
+            print("You are below the right number")
+        else:
+            print("you are above the right number")
         continue
 
 print("you made" ,no_of_guesses, "guess attempts")
