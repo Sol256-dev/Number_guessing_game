@@ -14,8 +14,12 @@ else:
 
 random_number = random.randint(0, max_number)
 
+no_of_guesses = 0
+
 while True:
     user_guess = input("Make a guess: ")
+
+    no_of_guesses += 1
 
     if user_guess.isdigit():
         user_guess = int(user_guess)
@@ -32,4 +36,4 @@ while True:
         print("wrong guess!")
         continue
 
-quit()
+print("you made" ,no_of_guesses, "guess attempts")
